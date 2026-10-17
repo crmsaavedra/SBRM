@@ -338,3 +338,43 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--gold); outline-
   .closing-mark.brand-logo { width: 52px; height: 52px; margin-bottom: 42px; }
   .closing-mark.brand-logo svg { width: 52px; height: 52px; }
 }
+
+/* Responsive finishing pass: keep mobile metadata and touch controls inside the viewport. */
+@media (max-width: 760px) {
+  .hero-bottom { flex-direction: column; align-items: stretch; gap: 26px; }
+  .countdown { width: 100%; text-align: left; }
+  .countdown-values { width: 100%; justify-content: space-between; flex-wrap: wrap; gap: 8px 10px; }
+  .countdown-values span { min-width: 52px; }
+  .route-map-panel { min-height: 360px; }
+  .map-place-panel-top { flex-wrap: wrap; }
+  .map-place-gallery { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .map-gallery-thumb { height: 44px; }
+  .map-stop strong { overflow-wrap: anywhere; }
+  .venue-row, .venue-main, .venue-main h3, .venue-main p { min-width: 0; }
+}
+
+@media (max-width: 390px) {
+  :root { --shell: calc(100% - 30px); }
+  .header-inner { gap: 12px; }
+  .brand { gap: 8px; }
+  .brand-text strong { font-size: 16px; }
+  .brand-text small { font-size: 8px; letter-spacing: .1em; }
+  .hero h1 { font-size: clamp(72px, 24vw, 100px); letter-spacing: -.09em; }
+  .hero h1 span { margin-top: 21px; }
+  .hero-subtitle { margin-top: 28px; font-size: 18px; }
+  .hero-location { font-size: 9px; letter-spacing: .12em; }
+  .hero-bottom { gap: 22px; }
+  .hero-date-block strong { max-width: 18ch; font-size: 13px; }
+  .countdown-values { gap: 6px; }
+  .countdown-values span { min-width: 47px; gap: 2px; }
+  .countdown-values b { font-size: 18px; }
+  .countdown-values small { font-size: 7px; }
+  .day-tab { padding-inline: 3px; }
+  .day-tab span { font-size: 17px; }
+  .day-tab small { font-size: 7px; letter-spacing: .04em; }
+  .map-place-panel-top { align-items: flex-start; flex-direction: column; gap: 7px; }
+  .map-stop { grid-template-columns: 22px minmax(0, 1fr); column-gap: 7px; }
+  .map-stop strong { font-size: 12px; line-height: 1.08; }
+  .map-stop em { font-size: 7px; }
+  .map-place-body h3 { font-size: 30px; }
+}
