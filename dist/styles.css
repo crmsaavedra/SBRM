@@ -269,10 +269,11 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--gold); outline-
 }
 
 /* SBRM identity + documentary image pass */
-.brand-logo { display: inline-grid; width: 31px; height: 31px; place-items: center; }
-.brand-mark.brand-logo { padding: 3px; border: 1px solid rgba(95,192,255,.55); border-radius: 50%; background: rgba(6,19,31,.32); }
+.brand-logo { display: inline-grid; width: 39px; height: 39px; place-items: center; }
+.brand-mark.brand-logo { grid-template-columns: 1fr; gap: 0; align-items: center; padding: 3px; border: 2px solid var(--blue-bright); border-radius: 50%; background: #06131f; box-shadow: 0 0 0 4px rgba(95,192,255,.1); }
 .brand-logo svg { display: block; width: 100%; height: 100%; overflow: visible; }
-.brand-route { fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.2; }
+.brand-svg-ring { fill: none; stroke: rgba(255,253,248,.32); stroke-width: 1; }
+.brand-route { fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3; }
 .brand-route-one { stroke: var(--blue-bright); }
 .brand-route-two { stroke: var(--white); }
 .brand-route-three { stroke: var(--coral); }
@@ -329,7 +330,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--gold); outline-
 .closing-inner { position: relative; z-index: 1; }
 
 @media (max-width: 760px) {
-  .brand-logo { width: 28px; height: 28px; }
+  .brand-logo { width: 32px; height: 32px; }
   .route-map-caption { right: 15px; bottom: 15px; left: 15px; max-width: none; padding: 13px; }
   .route-map-caption strong { font-size: 21px; }
   .map-orientation-note { left: 15px; top: 15px; max-width: 190px; padding: 8px 9px; font-size: 8px; }
