@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="es" data-event-start="2027-10-28T09:00:00-03:00">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#06131f" />
+    <meta name="description" content="SBRM 2027 — Student Branches Regional Meeting en Concepción, Chile. IEEE Sección Chile Sur y Universidad de Concepción." />
+    <title>SBRM 2027 — Concepción / Región del Biobío</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+    <div class="page-grain" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+    <header class="site-header" data-header>
+      <div class="shell header-inner">
+        <a class="brand" href="#inicio" aria-label="SBRM 2027, volver al inicio">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="brand-text"><strong>SBRM</strong><small>2027 · UdeC</small></span>
+        </a>
+        <nav class="desktop-nav" aria-label="Navegación principal">
+          <a href="#vision" data-nav="vision">El encuentro</a>
+          <a href="#programa" data-nav="programa">Programa</a>
+          <a href="#logistica" data-nav="logistica">Logística</a>
+          <a href="#participa" data-nav="participa">Participa</a>
+        </nav>
+        <div class="header-actions">
+          <span class="date-chip">28 OCT — 01 NOV 2027</span>
+          <a class="button button-small button-outline" href="#participa">Mantente al día <span aria-hidden="true">↗</span></a>
+          <button class="menu-toggle" id="menuToggle" type="button" aria-controls="mobileNav" aria-expanded="false">
+            <span></span><span></span><span></span><em>Menú</em>
+          </button>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mobileNav" aria-label="Navegación móvil" hidden>
+        <a href="#vision">El encuentro</a>
+        <a href="#programa">Programa</a>
+        <a href="#logistica">Logística</a>
+        <a href="#participa">Participa</a>
+        <a class="mobile-nav-cta" href="#participa">Mantente al día <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true">
+          <img src="assets/campanil-day.jpg" alt="" />
+          <div class="hero-media-wash"></div>
+        </div>
+        <div class="hero-grid-line hero-grid-line-left" aria-hidden="true"></div>
+        <div class="hero-grid-line hero-grid-line-right" aria-hidden="true"></div>
+        <svg class="route-graphic" data-route-graphic viewBox="0 0 680 470" fill="none" aria-hidden="true">
+          <path class="route-base" d="M12 410C104 388 111 277 201 286C289 294 276 370 352 342C425 314 411 151 493 174C559 192 577 83 668 54" />
+          <path class="route-pulse" d="M12 410C104 388 111 277 201 286C289 294 276 370 352 342C425 314 411 151 493 174C559 192 577 83 668 54" />
+          <circle cx="12" cy="410" r="7" class="route-node" />
+          <circle cx="352" cy="342" r="7" class="route-node" />
+          <circle cx="668" cy="54" r="7" class="route-node" />
+          <text x="24" y="440">CAMPUS</text>
+          <text x="367" y="373">TERRITORIO</text>
+          <text x="552" y="43">SBRM 27</text>
+        </svg>
+
+        <div class="shell hero-content">
+          <div class="hero-copy reveal reveal-delay-1">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> IEEE SECCIÓN CHILE SUR · UNIVERSIDAD DE CONCEPCIÓN</p>
+            <h1 id="hero-title">SBRM<br /><span>2027</span></h1>
+            <p class="hero-subtitle">Student Branches<br />Regional Meeting</p>
+            <p class="hero-location">CONCEPCIÓN <b>/</b> REGIÓN DEL BIOBÍO</p>
+          </div>
+          <div class="hero-side reveal reveal-delay-2">
+            <p class="hero-side-label">Una reunión regional para<br />aprender haciendo.</p>
+            <p class="hero-side-copy">Formación técnica, comunidad IEEE, territorio y un plan concreto para que cada rama vuelva con impulso.</p>
+            <a class="button button-primary" href="#programa">Explorar el encuentro <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-bottom reveal reveal-delay-3">
+            <div class="hero-date-block">
+              <span class="micro-label">FECHAS TENTATIVAS</span>
+              <strong>28 de octubre — 1 de noviembre de 2027</strong>
+              <small>Concepción · Talcahuano · Chile</small>
+            </div>
+            <div class="countdown" data-countdown aria-live="polite">
+              <span class="micro-label">FALTAN</span>
+              <div class="countdown-values">
+                <span><b id="countdownDays">—</b><small>días</small></span>
+                <span><b id="countdownHours">—</b><small>horas</small></span>
+                <span><b id="countdownMinutes">—</b><small>min</small></span>
+                <span><b id="countdownSeconds">—</b><small>seg</small></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#datos"><span></span> desplázate para entrar</a>
+      </section>
+
+      <section class="metrics-section" id="datos" aria-label="Cifras principales">
+        <div class="shell metrics-grid">
+          <div class="metrics-intro reveal"><span class="section-kicker">SBRM / 27</span><p>Una escala regional, una experiencia que se queda.</p></div>
+          <div class="metric reveal reveal-delay-1"><strong>200</strong><span>personas en el diseño de encuentro</span></div>
+          <div class="metric reveal reveal-delay-2"><strong>10</strong><span>tracks para compartir prácticas</span></div>
+          <div class="metric reveal reveal-delay-3"><strong>6</strong><span>talleres prácticos en la UdeC</span></div>
+          <div class="metric reveal reveal-delay-4"><strong>90</strong><span>días de transferencia para cada rama</span></div>
+        </div>
+      </section>
+
+      <section class="paper-section vision-section" id="vision" aria-labelledby="vision-title">
+        <div class="shell two-column two-column-wide">
+          <div class="section-heading reveal">
+            <span class="section-number">01 / EL ENCUENTRO</span>
+            <h2 id="vision-title">Venimos a<br /><em>movernos.</em></h2>
+          </div>
+          <div class="vision-copy reveal reveal-delay-1">
+            <p class="lead">SBRM es el lugar donde las ramas estudiantiles IEEE dejan de verse a la distancia y empiezan a trabajar en la misma mesa.</p>
+            <p>Durante cinco días, delegaciones de la región se encuentran en Concepción para intercambiar prácticas, entrenar habilidades técnicas, conocer el ecosistema del Biobío y abrir conversaciones que continúan cuando el evento termina.</p>
+            <div class="pull-quote"><span>“</span><p>Cada delegación se lleva una hoja de ruta de 90 días para activar su siguiente movimiento.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ink-section route-section" id="territorio" aria-labelledby="territorio-title">
+        <div class="shell">
+          <div class="section-topline reveal"><span class="section-number">02 / EL TERRITORIO</span><span class="topline-note">UNA CIUDAD · TRES CAPAS</span></div>
+          <div class="route-heading">
+            <h2 class="reveal" id="territorio-title">Concepción se<br /><span>lee en capas.</span></h2>
+            <p class="section-intro reveal reveal-delay-1">La reunión se mueve entre sede, campus y territorio. No como excursiones aisladas: como una sola conversación sobre tecnología, comunidad y futuro regional.</p>
+          </div>
+          <div class="route-layout">
+            <div class="route-map-panel reveal reveal-delay-1" aria-hidden="true">
+              <div class="map-orbit map-orbit-one"></div><div class="map-orbit map-orbit-two"></div><div class="map-orbit map-orbit-three"></div>
+              <span class="map-coordinate coord-a">36°46′S</span><span class="map-coordinate coord-b">73°03′W</span>
+              <div class="map-dot map-dot-one"><i></i><span>01</span></div>
+              <div class="map-dot map-dot-two"><i></i><span>02</span></div>
+              <div class="map-dot map-dot-three"><i></i><span>03</span></div>
+              <svg viewBox="0 0 520 500" fill="none"><path d="M92 359C176 328 153 242 240 278C314 309 289 411 354 360C405 320 388 152 462 122" /><path d="M90 359L55 408" /><path d="M240 278L207 191" /><path d="M354 360L413 422" /></svg>
+            </div>
+            <div class="route-cards reveal reveal-delay-2">
+              <article class="route-card" data-route-card="1">
+                <div class="route-card-top"><span>01</span><span class="status-tag">SEDE PROPUESTA</span></div>
+                <h3>Marina del Sol<br /><em>Talcahuano</em></h3>
+                <p>Base operativa para alojamiento, plenarias, alimentación y sesiones paralelas, sujeta a disponibilidad y confirmación contractual.</p>
+                <span class="route-arrow" aria-hidden="true">↘</span>
+              </article>
+              <article class="route-card route-card-accent" data-route-card="2">
+                <div class="route-card-top"><span>02</span><span class="status-tag">JORNADA ACADÉMICA</span></div>
+                <h3>Universidad de<br /><em>Concepción</em></h3>
+                <p>Campus, Campanil, talleres, recepción institucional y encuentro con la plataforma académica que sostiene a las ramas.</p>
+                <span class="route-arrow" aria-hidden="true">↘</span>
+              </article>
+              <article class="route-card" data-route-card="3">
+                <div class="route-card-top"><span>03</span><span class="status-tag">ECOSISTEMA REGIONAL</span></div>
+                <h3>Biobío: puerto,<br /><em>industria y cultura</em></h3>
+                <p>Talcahuano, Hualpén, Lota, San Pedro, Tomé y Dichato aparecen como contexto vivo para conectar ingeniería y territorio.</p>
+                <span class="route-arrow" aria-hidden="true">↘</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="paper-section programme-section" id="programa" aria-labelledby="programa-title">
+        <div class="shell">
+          <div class="section-topline reveal"><span class="section-number">03 / EL PROGRAMA</span><span class="topline-note">AGENDA PREVISTA · 5 DÍAS</span></div>
+          <div class="programme-intro">
+            <div class="section-heading reveal"><h2 id="programa-title">Cinco días.<br /><em>Un solo pulso.</em></h2></div>
+            <p class="section-intro reveal reveal-delay-1">La agenda combina formación, encuentro, ciudad y transferencia. Los horarios, salas y sesiones específicas se publicarán con la apertura de inscripciones.</p>
+          </div>
+          <div class="programme-shell reveal reveal-delay-1">
+            <div class="programme-tabs" role="tablist" aria-label="Días del programa">
+              <button class="day-tab is-active" id="day-tab-1" type="button" role="tab" aria-selected="true" aria-controls="day-panel-1" data-program-trigger="1"><span>28</span><small>OCT</small></button>
+              <button class="day-tab" id="day-tab-2" type="button" role="tab" aria-selected="false" aria-controls="day-panel-2" data-program-trigger="2"><span>29</span><small>OCT</small></button>
+              <button class="day-tab" id="day-tab-3" type="button" role="tab" aria-selected="false" aria-controls="day-panel-3" data-program-trigger="3"><span>30</span><small>OCT</small></button>
+              <button class="day-tab" id="day-tab-4" type="button" role="tab" aria-selected="false" aria-controls="day-panel-4" data-program-trigger="4"><span>31</span><small>OCT</small></button>
+              <button class="day-tab" id="day-tab-5" type="button" role="tab" aria-selected="false" aria-controls="day-panel-5" data-program-trigger="5"><span>01</span><small>NOV</small></button>
+            </div>
+            <div class="programme-panels">
+              <article class="programme-panel is-active" id="day-panel-1" role="tabpanel" aria-labelledby="day-tab-1" data-program-panel="1">
+                <div class="programme-panel-index">DÍA 01 <span>·</span> JUEVES</div><h3>Llegar, acreditarse,<br /><em>encontrarse.</em></h3>
+                <p>Recepción de delegaciones, acreditación, orientación logística y primer encuentro entre ramas. La llegada se organiza para que cada persona pueda comenzar el programa con calma.</p>
+                <ul><li>Check-in y acreditación</li><li>Orientación de movilidad</li><li>Bienvenida de comunidad</li></ul>
+              </article>
+              <article class="programme-panel" id="day-panel-2" role="tabpanel" aria-labelledby="day-tab-2" data-program-panel="2" hidden>
+                <div class="programme-panel-index">DÍA 02 <span>·</span> VIERNES</div><h3>Abrir la reunión,<br /><em>activar la red.</em></h3>
+                <p>La apertura instala el propósito de SBRM y pone en común la experiencia de las ramas: qué funciona, qué cuesta y qué queremos probar juntos.</p>
+                <ul><li>Apertura institucional</li><li>Plenaria de comunidad</li><li>Tracks de prácticas</li></ul>
+              </article>
+              <article class="programme-panel" id="day-panel-3" role="tabpanel" aria-labelledby="day-tab-3" data-program-panel="3" hidden>
+                <div class="programme-panel-index">DÍA 03 <span>·</span> SÁBADO</div><h3>Campus UdeC,<br /><em>manos a la obra.</em></h3>
+                <p>Jornada académica con talleres técnicos, visitas autorizadas, capítulos estudiantiles y conversaciones con la Universidad de Concepción.</p>
+                <ul><li>Seis talleres simultáneos</li><li>Recorrido por el campus</li><li>Feria de capítulos y postgrados</li></ul>
+              </article>
+              <article class="programme-panel" id="day-panel-4" role="tabpanel" aria-labelledby="day-tab-4" data-program-panel="4" hidden>
+                <div class="programme-panel-index">DÍA 04 <span>·</span> DOMINGO</div><h3>Conectar ideas<br /><em>con el territorio.</em></h3>
+                <p>Mentorías, desafíos, vínculos con el ecosistema profesional y una experiencia local que muestre el Biobío más allá de la sala.</p>
+                <ul><li>Pitch Competition</li><li>Ethics Competition</li><li>Networking y visitas locales</li></ul>
+              </article>
+              <article class="programme-panel" id="day-panel-5" role="tabpanel" aria-labelledby="day-tab-5" data-program-panel="5" hidden>
+                <div class="programme-panel-index">DÍA 05 <span>·</span> LUNES</div><h3>Cerrar no es terminar.<br /><em>Es transferir.</em></h3>
+                <p>El encuentro cierra con acuerdos concretos, balance compartido y una hoja de ruta para que lo aprendido tenga continuidad en cada rama.</p>
+                <ul><li>Acuerdos de continuidad</li><li>Plan de 90 días</li><li>Cierre y próxima sede</li></ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ink-section tracks-section" id="experiencias" aria-labelledby="experiencias-title">
+        <div class="shell">
+          <div class="section-topline reveal"><span class="section-number">04 / LAS EXPERIENCIAS</span><span class="topline-note">APRENDER · CONECTAR · TRANSFORMAR</span></div>
+          <div class="tracks-heading"><h2 class="reveal" id="experiencias-title">Todo lo que<br /><span>se pone en movimiento.</span></h2><p class="section-intro reveal reveal-delay-1">La SBRM reúne distintas formas de participar: una sala técnica, una conversación de pasillo, una mentoría, un desafío o una idea que encuentra a su equipo.</p></div>
+          <div class="track-grid">
+            <article class="track-feature track-feature-large reveal"><span class="feature-index">01</span><div><span class="card-kicker">FORMACIÓN</span><h3>Seis talleres<br /><em>para llevarse algo.</em></h3><p>Sesiones prácticas pensadas para que el conocimiento pase de la pantalla a la agenda de la rama.</p></div><span class="card-symbol" aria-hidden="true">↗</span></article>
+            <article class="track-feature reveal reveal-delay-1"><span class="feature-index">02</span><div><span class="card-kicker">COMUNIDAD</span><h3>Capítulos<br /><em>en la misma mesa.</em></h3><p>RAS · CSS · PES · EMBS · ComSoc · WIE y las ramas que sostienen la red.</p></div><span class="card-symbol" aria-hidden="true">⌁</span></article>
+            <article class="track-feature accent-card reveal reveal-delay-2"><span class="feature-index">03</span><div><span class="card-kicker">FUTURO</span><h3>Mentorías,<br /><em>industria y academia.</em></h3><p>Postgrados, empresas, mini feria laboral y conversaciones que abren próximos pasos.</p></div><span class="card-symbol" aria-hidden="true">◎</span></article>
+            <article class="track-feature track-feature-wide reveal reveal-delay-3"><span class="feature-index">04</span><div><span class="card-kicker">DESAFÍO</span><h3>Pitch Competition + Ethics Competition</h3><p>Ideas que se exponen, se discuten y se ponen a prueba con una mirada técnica y responsable.</p></div><span class="card-symbol" aria-hidden="true">✳</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="paper-section logistics-section" id="logistica" aria-labelledby="logistica-title">
+        <div class="shell">
+          <div class="section-topline reveal"><span class="section-number">05 / LA LOGÍSTICA</span><span class="topline-note">LLEGAR · QUEDARSE · MOVERSE</span></div>
+          <div class="logistics-intro"><div class="section-heading reveal"><h2 id="logistica-title">Todo claro<br /><em>antes de llegar.</em></h2></div><p class="section-intro reveal reveal-delay-1">La experiencia también se diseña en los detalles: una llegada simple, información verificable, rutas accesibles y un equipo que acompaña cada transición.</p></div>
+          <div class="logistics-grid">
+            <article class="logistic-card reveal"><span class="logistic-number">01</span><span class="card-kicker">LLEGADA</span><h3>Carriel Sur<br />a un paso.</h3><p>La llegada se coordina desde el aeropuerto Carriel Sur y el terminal de buses, con ventanas de viaje, contactos de guardia y traslados grupales según demanda.</p><button class="text-button" type="button" data-open-modal="logistica">Ver información de viaje <span aria-hidden="true">↗</span></button></article>
+            <article class="logistic-card reveal reveal-delay-1"><span class="logistic-number">02</span><span class="card-kicker">ESTADÍA</span><h3>Dormir, comer,<br />compartir.</h3><p>El modelo busca concentrar alojamiento, plenarias y alimentación en la sede operativa. La disponibilidad final y las tarifas se confirmarán con el proveedor.</p><button class="text-button" type="button" data-open-modal="sede">Ver sedes y alternativas <span aria-hidden="true">↗</span></button></article>
+            <article class="logistic-card reveal reveal-delay-2"><span class="logistic-number">03</span><span class="card-kicker">CUIDADOS</span><h3>Una ruta<br />para todos.</h3><p>El registro contempla accesibilidad, alimentación declarada, conectividad y documentación de viaje. Las exigencias de visa siempre se revisan en fuentes oficiales.</p><button class="text-button" type="button" data-open-modal="cuidados">Ver compromisos de cuidado <span aria-hidden="true">↗</span></button></article>
+          </div>
+          <div class="logistics-note reveal"><span class="note-icon">i</span><p><strong>Importante:</strong> los nombres de salones, aforos, habitaciones, tarifas, permisos universitarios y servicios de traslado quedan sujetos a confirmación antes de abrir las inscripciones.</p></div>
+        </div>
+      </section>
+
+      <section class="ink-section venue-section" id="sede" aria-labelledby="sede-title">
+        <div class="shell">
+          <div class="section-topline reveal"><span class="section-number">06 / LA SEDE</span><span class="topline-note">UN SISTEMA, NO UN SOLO LUGAR</span></div>
+          <div class="venue-heading"><h2 class="reveal" id="sede-title">La sede se<br /><span>construye en red.</span></h2><p class="section-intro reveal reveal-delay-1">La propuesta combina una base operativa para hacer simple la estadía y una jornada académica que abre la puerta de la Universidad de Concepción.</p></div>
+          <div class="venue-list">
+            <article class="venue-row reveal"><div class="venue-index">A</div><div class="venue-main"><span class="status-tag">SEDE BASE PROPUESTA</span><h3>Hotel Marina del Sol <em>/ Talcahuano</em></h3><p>Alojamiento, plenarias, feria, alimentación y sesiones paralelas. El nombre contractual del salón, los montajes, el inventario y las tarifas se confirmarán por escrito.</p></div><button class="disclosure-button" type="button" aria-expanded="false" aria-controls="venue-a-detail" data-accordion-trigger="venue-a-detail"><span>+</span><span class="sr-only">Mostrar detalle de Marina del Sol</span></button><div class="venue-detail" id="venue-a-detail" hidden><p>El escenario base busca que las delegaciones puedan dormir, comer y encontrarse en un mismo complejo, reduciendo desplazamientos y cuidando la operación de los tres días centrales.</p></div></article>
+            <article class="venue-row reveal reveal-delay-1"><div class="venue-index">B</div><div class="venue-main"><span class="status-tag status-tag-blue">ALTERNATIVA OPERACIONAL</span><h3>Wyndham Concepción Pettra <em>+ SurActivo</em></h3><p>Alternativa integrada para plenarias, apertura, cierre, feria y salones paralelos. El aforo y la propuesta comercial quedan sujetos a cotización formal.</p></div><button class="disclosure-button" type="button" aria-expanded="false" aria-controls="venue-b-detail" data-accordion-trigger="venue-b-detail"><span>+</span><span class="sr-only">Mostrar detalle de Pettra y SurActivo</span></button><div class="venue-detail" id="venue-b-detail" hidden><p>La documentación de trabajo contempla SurActivo como salón principal y salones Pettra para tracks y reuniones, con capacidades por montaje que deben confirmarse.</p></div></article>
+            <article class="venue-row reveal reveal-delay-2"><div class="venue-index">C</div><div class="venue-main"><span class="status-tag status-tag-coral">JORNADA ACADÉMICA</span><h3>Universidad de Concepción <em>/ Campus Central</em></h3><p>Campus, Campanil, Foro, Arco, Casa del Arte, talleres y vinculación. Cada espacio queda sujeto a autorización y disponibilidad institucional.</p></div><button class="disclosure-button" type="button" aria-expanded="false" aria-controls="venue-c-detail" data-accordion-trigger="venue-c-detail"><span>+</span><span class="sr-only">Mostrar detalle de la Universidad de Concepción</span></button><div class="venue-detail" id="venue-c-detail" hidden><p>La jornada UdeC conecta la reunión con la plataforma académica local: seis talleres simultáneos, recepción institucional y encuentros con capítulos y grupos de la universidad.</p></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="paper-section city-section" id="concepcion" aria-labelledby="concepcion-title">
+        <div class="shell city-grid">
+          <div class="city-copy reveal"><span class="section-number">07 / CONCEPCIÓN</span><h2 id="concepcion-title">Una ciudad que<br /><em>también participa.</em></h2><p class="lead">Concepción es campus, puerto, bosque, música e industria. El Biobío no funciona como telón de fondo: es parte de la conversación.</p><p>Desde el Campanil hasta Talcahuano, desde la Pinacoteca hasta Lota, la experiencia regional se abre a lugares que explican por qué esta sede tiene una identidad propia.</p><div class="city-tags"><span>campus</span><span>puerto</span><span>industria</span><span>música</span><span>costa</span></div></div>
+          <div class="city-gallery reveal reveal-delay-1"><figure class="gallery-main"><img src="assets/campanil-night.jpg" alt="Campanil de la Universidad de Concepción iluminado de noche" /><figcaption><span>01</span> Campanil UdeC · patrimonio vivo</figcaption></figure><figure class="gallery-small"><img src="assets/campanil-day.jpg" alt="Campanil de la Universidad de Concepción durante el día" /><figcaption><span>02</span> Campus Central · punto de encuentro</figcaption></figure><div class="gallery-statement"><span>36°46′S</span><strong>DEL CAMPUS<br />AL TERRITORIO</strong><span>73°03′W</span></div></div>
+        </div>
+      </section>
+
+      <section class="ink-section participate-section" id="participa" aria-labelledby="participa-title">
+        <div class="shell">
+          <div class="participate-top"><span class="section-number">08 / PARTICIPA</span><span class="topline-note">LA CONVERSACIÓN YA EMPEZÓ</span></div>
+          <div class="participate-heading"><h2 class="reveal" id="participa-title">La próxima<br /><span>conexión puede ser tuya.</span></h2><p class="section-intro reveal reveal-delay-1">La inscripción, el llamado a voluntariado, las postulaciones de relatores y la participación de empresas se habilitarán por etapas.</p></div>
+          <div class="participate-grid">
+            <article class="participate-card reveal"><span class="participate-icon">→</span><span class="card-kicker">DELEGACIONES</span><h3>Recibe las novedades de inscripción.</h3><p>Fechas, categorías, alojamiento y programa se publicarán cuando el proceso esté listo.</p><button class="button button-light" type="button" data-toast="Las novedades de inscripción se publicarán por los canales oficiales.">Avisarme cuando abra <span aria-hidden="true">↗</span></button></article>
+            <article class="participate-card participate-card-accent reveal reveal-delay-1"><span class="participate-icon">✳</span><span class="card-kicker">COMUNIDAD</span><h3>Haz que la reunión suceda.</h3><p>Voluntariado, facilitación y apoyo operativo: distintas formas de hacer comunidad desde dentro.</p><button class="button button-dark" type="button" data-toast="El llamado a voluntariado se habilitará próximamente.">Quiero colaborar <span aria-hidden="true">↗</span></button></article>
+            <article class="participate-card reveal reveal-delay-2"><span class="participate-icon">◎</span><span class="card-kicker">EMPRESAS Y ACADEMIA</span><h3>Conecta tu organización con el Biobío.</h3><p>Mentorías, stands, desafíos y conversaciones que vinculan el talento joven con la región.</p><button class="button button-light" type="button" data-toast="La convocatoria para aliados se habilitará próximamente.">Conocer la convocatoria <span aria-hidden="true">↗</span></button></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing-section" aria-labelledby="closing-title">
+        <div class="shell closing-inner">
+          <div class="closing-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+          <p class="eyebrow"><span class="eyebrow-dot"></span> SBRM 2027 · CONCEPCIÓN</p>
+          <h2 id="closing-title">Nos vemos<br /><em>en movimiento.</em></h2>
+          <p>28 de octubre — 1 de noviembre de 2027<br />Región del Biobío · Chile</p>
+          <a class="button button-primary" href="#inicio">Volver al inicio <span aria-hidden="true">↑</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div class="footer-brand"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><strong>SBRM 2027</strong><p>Student Branches Regional Meeting<br />Concepción · Región del Biobío</p></div>
+        <div class="footer-hosts"><span class="micro-label">PRESENTAN</span><p>IEEE Sección Chile Sur<br />Universidad de Concepción</p></div>
+        <div class="footer-note"><span class="micro-label">INFORMACIÓN OFICIAL</span><p>La fecha es tentativa. Las condiciones de sede, tarifas, salas y servicios se actualizarán a medida que sean confirmadas.</p></div>
+      </div>
+      <div class="shell footer-bottom"><span>© SBRM 2027 · IEEE Sección Chile Sur · UdeC</span><span>Concepción / Chile</span></div>
+    </footer>
+
+    <dialog class="event-dialog" id="eventDialog" aria-labelledby="dialogTitle">
+      <div class="dialog-inner">
+        <div class="dialog-header"><span class="section-number">SBRM 2027 / INFORMACIÓN</span><button class="dialog-close" type="button" data-close-dialog aria-label="Cerrar información">×</button></div>
+        <div class="dialog-content" data-dialog-content="general">
+          <h2 id="dialogTitle">Una reunión con<br /><em>los pies en la tierra.</em></h2>
+          <p>La SBRM 2027 se proyecta para 200 personas en Concepción y Talcahuano, con una base de tres jornadas de contenido, cuatro noches de operación y una experiencia extendida de cinco días.</p>
+          <div class="dialog-facts"><div><span>FORMATO</span><strong>Formación + comunidad + territorio</strong></div><div><span>ESCALA</span><strong>180 inscripciones pagadas + hasta 20 cupos complementarios</strong></div><div><span>IDIOMAS</span><strong>Español · English · Português</strong></div></div>
+          <p class="dialog-footnote">La agenda específica, las tarifas y las condiciones finales se publicarán con la apertura de los procesos correspondientes.</p>
+        </div>
+        <div class="dialog-content" data-dialog-content="logistica" hidden>
+          <h2>Llegar sin<br /><em>perderse nada.</em></h2>
+          <p>La información de viaje se organizará por delegación: itinerario, necesidades de accesibilidad, punto de encuentro, traslado agrupado y contacto de guardia.</p>
+          <ul class="dialog-list"><li>Carriel Sur como aeropuerto de llegada al Gran Concepción.</li><li>Conexiones internacionales vía Santiago, según nacionalidad y ruta.</li><li>Guía de documentación y visa enlazada a fuentes oficiales vigentes.</li><li>Alternativas de roaming, eSIM/SIM y Wi‑Fi informadas antes del viaje.</li></ul>
+        </div>
+        <div class="dialog-content" data-dialog-content="sede" hidden>
+          <h2>Una sede que<br /><em>funciona como sistema.</em></h2>
+          <p>Marina del Sol es la base operativa propuesta. Pettra + SurActivo mantiene una alternativa integrada. La Universidad de Concepción aporta la jornada académica. Cada condición requiere confirmación escrita.</p>
+          <div class="dialog-facts"><div><span>BASE</span><strong>Marina del Sol · Talcahuano</strong></div><div><span>ALTERNATIVA</span><strong>Wyndham Concepción Pettra + SurActivo</strong></div><div><span>CAMPUS</span><strong>Universidad de Concepción · sujeto a autorización</strong></div></div>
+        </div>
+        <div class="dialog-content" data-dialog-content="cuidados" hidden>
+          <h2>Diseñar el encuentro<br /><em>también es cuidar.</em></h2>
+          <p>El registro contempla accesibilidad, alimentación declarada, rutas seguras, atención de cambios, conectividad y alternativas bajo techo para la programación exterior.</p>
+          <p class="dialog-footnote">Las necesidades específicas se recogerán en el formulario de inscripción y se gestionarán con confidencialidad.</p>
+        </div>
+      </div>
+    </dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  </body>
+</html>

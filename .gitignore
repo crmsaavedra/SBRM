@@ -1,0 +1,7 @@
+# The Sites source repository contains only the public web bundle.
+*
+!.gitignore
+!.openai/
+!.openai/hosting.json
+!dist/
+!dist/**
