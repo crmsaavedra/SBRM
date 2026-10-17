@@ -140,10 +140,10 @@ const mapPlaces = {
     description: 'El campus central reúne el Campanil, el Foro, la Casa del Arte, la Biblioteca Central y una red de espacios que conectan formación, cultura y vida universitaria.',
     distance: 'PUNTO DE PARTIDA',
     coordinates: '36°49′S / 73°02′W',
-    image: 'assets/campanil-day.jpg',
-    alt: 'Campanil de la Universidad de Concepción durante el día',
+    image: 'assets/udec-aerial.jpg',
+    alt: 'Vista aérea del campus de la Universidad de Concepción',
     gallery: [
-      { image: 'assets/campanil-day.jpg', alt: 'Campanil de la Universidad de Concepción', label: 'Campanil' },
+      { image: 'assets/udec-aerial.jpg', alt: 'Vista aérea del campus de la Universidad de Concepción', label: 'Vista aérea' },
       { image: 'assets/map-udec-biblioteca.jpg', alt: 'Acceso principal de la Biblioteca Central Luis David Cruz Ocampo', label: 'Biblioteca Central' },
       { image: 'assets/map-udec-arco.jpg', alt: 'Arco de la Universidad de Concepción', label: 'Arco UdeC' },
       { image: 'assets/map-udec-foro.jpg', alt: 'Vista desde el Foro de la Universidad de Concepción', label: 'Foro' },

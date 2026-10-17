@@ -267,3 +267,70 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--gold); outline-
   *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* SBRM identity + documentary image pass */
+.brand-logo { display: inline-grid; width: 31px; height: 31px; place-items: center; }
+.brand-mark.brand-logo { padding: 3px; border: 1px solid rgba(95,192,255,.55); border-radius: 50%; background: rgba(6,19,31,.32); }
+.brand-logo svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.brand-route { fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.2; }
+.brand-route-one { stroke: var(--blue-bright); }
+.brand-route-two { stroke: var(--white); }
+.brand-route-three { stroke: var(--coral); }
+.brand-core { fill: var(--gold); stroke: var(--ink); stroke-width: 1.25; }
+.closing-mark.brand-logo { display: grid; width: 60px; height: 59px; margin-bottom: 58px; }
+.closing-mark.brand-logo { padding: 0; border: 0; border-radius: 0; background: transparent; }
+.closing-mark.brand-logo svg { width: 59px; height: 59px; }
+.closing-mark.brand-logo .brand-route-one { stroke: var(--ink); opacity: .55; }
+.closing-mark.brand-logo .brand-route-two { stroke: var(--ink); }
+.closing-mark.brand-logo .brand-route-three { stroke: var(--blue); }
+.closing-mark.brand-logo .brand-core { fill: var(--ink); stroke: var(--gold); }
+.eyebrow-dot { width: 8px; height: 8px; border-radius: 1px; background: var(--blue-bright); box-shadow: none; transform: rotate(45deg); }
+.closing-section .eyebrow-dot { background: var(--ink); box-shadow: none; }
+.route-node, .regional-route-node { fill: var(--blue-bright); stroke: var(--ink); }
+.route-pulse, .regional-route-pulse { stroke: var(--blue-bright); }
+.map-dot i { border: 0; background: var(--blue); box-shadow: none; }
+.map-marker-dot { border-color: rgba(255,253,248,.7); color: var(--blue-bright); box-shadow: none; }
+.map-marker.is-active .map-marker-dot { border-color: var(--blue-bright); background: var(--blue-bright); color: var(--ink); box-shadow: none; animation: none; }
+.map-stage-grid::after { border-color: rgba(95,192,255,.18); box-shadow: 0 0 0 42px rgba(95,192,255,.035), 0 0 0 100px rgba(95,192,255,.025); }
+.dialog-list li::before { width: 6px; height: 6px; border-radius: 1px; background: var(--blue); transform: rotate(45deg); }
+
+.route-map-caption { position: absolute; right: 25px; bottom: 23px; left: 25px; z-index: 3; display: grid; gap: 7px; max-width: 245px; padding: 17px; border-left: 2px solid var(--blue-bright); background: rgba(6,19,31,.82); color: var(--white); backdrop-filter: blur(8px); }
+.route-map-caption strong { font: 500 24px/.98 var(--display); letter-spacing: -.05em; }
+.route-map-caption a { width: fit-content; color: var(--blue-bright); font: 10px var(--mono); text-decoration: underline; text-underline-offset: 3px; }
+.route-map-caption a span { font-size: 15px; }
+
+.track-feature, .logistic-card, .participate-card { isolation: isolate; overflow: hidden; }
+.track-feature-photo, .logistic-card-photo, .participate-card-image { position: absolute; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+.track-feature > :not(.track-feature-photo), .logistic-card > :not(.logistic-card-photo), .participate-card > :not(.participate-card-image) { position: relative; z-index: 1; }
+.track-feature-photo::after, .logistic-card-photo::after, .participate-card-image::after { position: absolute; inset: 0; content: ""; background: linear-gradient(145deg, rgba(6,19,31,.98) 2%, rgba(6,19,31,.72) 54%, rgba(6,19,31,.28)); }
+.track-feature-photo img, .logistic-card-photo img, .participate-card-image img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.72) contrast(1.05); opacity: .54; transform: scale(1.02); transition: transform 800ms var(--ease), opacity 500ms ease, filter 500ms ease; }
+.track-feature:hover .track-feature-photo img, .logistic-card:hover .logistic-card-photo img, .participate-card:hover .participate-card-image img { opacity: .72; filter: saturate(.95) contrast(1.06); transform: scale(1.07); }
+.track-feature.accent-card .track-feature-photo::after { background: linear-gradient(145deg, rgba(228,168,46,.94), rgba(228,168,46,.56)); }
+.track-feature.accent-card .track-feature-photo img { opacity: .2; mix-blend-mode: multiply; }
+.track-feature-wide .track-feature-photo::after { background: linear-gradient(90deg, rgba(6,19,31,.95), rgba(6,19,31,.45)); }
+.logistic-card-photo::after { background: linear-gradient(145deg, rgba(245,241,232,.96) 8%, rgba(245,241,232,.72) 58%, rgba(245,241,232,.3)); }
+.logistic-card-photo img { opacity: .34; }
+.participate-card-image::after { background: linear-gradient(145deg, rgba(6,19,31,.97), rgba(6,19,31,.48)); }
+.participate-card-accent .participate-card-image::after { background: linear-gradient(145deg, rgba(228,168,46,.92), rgba(228,168,46,.45)); }
+.participate-card-accent .participate-card-image img { opacity: .22; mix-blend-mode: multiply; }
+
+.venue-row-photo { background-image: linear-gradient(90deg, rgba(6,19,31,.98) 0%, rgba(6,19,31,.88) 56%, rgba(6,19,31,.47) 100%), var(--venue-image); background-size: cover; background-position: center; }
+.venue-row-photo:hover { background-image: linear-gradient(90deg, rgba(6,19,31,.96) 0%, rgba(6,19,31,.8) 56%, rgba(6,19,31,.34) 100%), var(--venue-image); }
+.gallery-statement-photo { position: relative; overflow: hidden; }
+.gallery-statement-photo > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: saturate(.5) contrast(1.08); opacity: .5; }
+.gallery-statement-photo::after { position: absolute; inset: 0; content: ""; background: linear-gradient(180deg, rgba(228,168,46,.34), rgba(228,168,46,.92)); }
+.gallery-statement-photo > div { position: relative; z-index: 1; display: flex; height: 100%; flex-direction: column; justify-content: space-between; padding: 16px; }
+.closing-section { background-image: linear-gradient(90deg, rgba(228,168,46,.94), rgba(228,168,46,.74)); }
+.closing-photo { position: absolute; inset: 0; overflow: hidden; }
+.closing-photo::after { position: absolute; inset: 0; content: ""; background: linear-gradient(90deg, rgba(228,168,46,.88), rgba(228,168,46,.53)); }
+.closing-photo img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(.25) saturate(.6) contrast(1.08); opacity: .28; transform: scale(1.03); }
+.closing-inner { position: relative; z-index: 1; }
+
+@media (max-width: 760px) {
+  .brand-logo { width: 28px; height: 28px; }
+  .route-map-caption { right: 15px; bottom: 15px; left: 15px; max-width: none; padding: 13px; }
+  .route-map-caption strong { font-size: 21px; }
+  .venue-row-photo { background-image: linear-gradient(90deg, rgba(6,19,31,.98), rgba(6,19,31,.8)), var(--venue-image); }
+  .closing-mark.brand-logo { width: 52px; height: 52px; margin-bottom: 42px; }
+  .closing-mark.brand-logo svg { width: 52px; height: 52px; }
+}
