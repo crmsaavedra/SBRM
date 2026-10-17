@@ -27,6 +27,7 @@
           <a href="#vision" data-nav="vision">El encuentro</a>
           <a href="#programa" data-nav="programa">Programa</a>
           <a href="#logistica" data-nav="logistica">Logística</a>
+          <a href="#mapa" data-nav="mapa">Mapa</a>
           <a href="#participa" data-nav="participa">Participa</a>
         </nav>
         <div class="header-actions">
@@ -41,6 +42,7 @@
         <a href="#vision">El encuentro</a>
         <a href="#programa">Programa</a>
         <a href="#logistica">Logística</a>
+        <a href="#mapa">Mapa</a>
         <a href="#participa">Participa</a>
         <a class="mobile-nav-cta" href="#participa">Mantente al día <span aria-hidden="true">↗</span></a>
       </nav>
@@ -271,9 +273,66 @@
         </div>
       </section>
 
+      <section class="map-tour-section" id="mapa" aria-labelledby="mapa-title">
+        <div class="shell">
+          <div class="section-topline map-tour-topline reveal"><span class="section-number">08 / EL MAPA</span><span class="topline-note">CAMPUS · PUERTO · COSTA · PATRIMONIO</span></div>
+          <div class="map-tour-heading reveal">
+            <div><span class="section-number">RECORRIDO REGIONAL · BIOBÍO</span><h2 id="mapa-title">La ciudad<br /><em>se abre.</em></h2></div>
+            <p>El encuentro tiene una base, pero no una sola coordenada. Selecciona una parada para descubrir lugares que pueden formar parte de la experiencia SBRM: campus, paisaje, memoria y mar.</p>
+          </div>
+
+          <div class="regional-map-layout">
+            <div class="regional-map-stage reveal" data-map-stage aria-label="Mapa interactivo de lugares por visitar en Concepción y alrededores">
+              <div class="map-stage-grid" aria-hidden="true"></div>
+              <div class="map-contour map-contour-one" aria-hidden="true"></div>
+              <div class="map-contour map-contour-two" aria-hidden="true"></div>
+              <svg class="regional-map-route" viewBox="0 0 1000 700" fill="none" aria-hidden="true">
+                <path class="regional-route-base" d="M270 358C332 325 390 286 445 315C499 344 520 428 599 396C678 364 671 246 741 196C793 159 844 113 890 71" />
+                <path class="regional-route-pulse" d="M270 358C332 325 390 286 445 315C499 344 520 428 599 396C678 364 671 246 741 196C793 159 844 113 890 71" />
+                <path class="regional-route-branch" d="M445 315C407 384 360 454 325 530C304 574 310 615 334 650" />
+                <circle class="regional-route-node" cx="270" cy="358" r="9" />
+                <circle class="regional-route-node" cx="599" cy="396" r="9" />
+                <circle class="regional-route-node" cx="890" cy="71" r="9" />
+              </svg>
+              <div class="map-north" aria-hidden="true"><span>N</span><i></i></div>
+              <span class="map-coordinates">36°49′S / 73°02′W</span>
+              <span class="map-region-label map-region-label-campus" aria-hidden="true">CAMPUS</span>
+              <span class="map-region-label map-region-label-coast" aria-hidden="true">COSTA DEL BIOBÍO</span>
+              <span class="map-region-label map-region-label-puerto" aria-hidden="true">BAHÍA</span>
+              <button class="map-marker is-active" type="button" data-map-trigger="udec" aria-pressed="true" aria-label="Mostrar Universidad de Concepción" style="--x: 28%; --y: 49%;"><span class="map-marker-dot">01</span><span class="map-marker-label">UdeC</span></button>
+              <button class="map-marker" type="button" data-map-trigger="parque" aria-pressed="false" aria-label="Mostrar Parque Ecuador" style="--x: 34%; --y: 37%;"><span class="map-marker-dot">02</span><span class="map-marker-label">Parque Ecuador</span></button>
+              <button class="map-marker" type="button" data-map-trigger="sanpedro" aria-pressed="false" aria-label="Mostrar Laguna Grande, San Pedro de la Paz" style="--x: 39%; --y: 74%;"><span class="map-marker-dot">03</span><span class="map-marker-label">Laguna Grande</span></button>
+              <button class="map-marker" type="button" data-map-trigger="talcahuano" aria-pressed="false" aria-label="Mostrar Puerto de Talcahuano" style="--x: 64%; --y: 37%;"><span class="map-marker-dot">04</span><span class="map-marker-label">Talcahuano</span></button>
+              <button class="map-marker" type="button" data-map-trigger="lota" aria-pressed="false" aria-label="Mostrar Parque Isidora Cousiño de Lota" style="--x: 45%; --y: 88%;"><span class="map-marker-dot">05</span><span class="map-marker-label">Lota</span></button>
+              <button class="map-marker" type="button" data-map-trigger="tome" aria-pressed="false" aria-label="Mostrar Playa de Tomé" style="--x: 75%; --y: 20%;"><span class="map-marker-dot">06</span><span class="map-marker-label">Tomé</span></button>
+              <button class="map-marker" type="button" data-map-trigger="dichato" aria-pressed="false" aria-label="Mostrar Costanera de Dichato" style="--x: 86%; --y: 8%;"><span class="map-marker-dot">07</span><span class="map-marker-label">Dichato</span></button>
+            </div>
+
+            <aside class="map-place-panel reveal reveal-delay-1" data-map-detail aria-live="polite">
+              <div class="map-place-panel-top"><span>PARADA <b id="mapPlaceIndex">01</b></span><span id="mapPlaceType">CAMPUS / PATRIMONIO</span></div>
+              <figure class="map-place-image"><img id="mapPlaceImage" src="assets/campanil-day.jpg" alt="Campanil de la Universidad de Concepción durante el día" decoding="async" /></figure>
+              <div class="map-place-body"><span class="status-tag status-tag-blue" id="mapPlaceTag">BASE ACADÉMICA</span><h3 id="mapPlaceTitle">Universidad de Concepción</h3><p id="mapPlaceDescription">El campus central reúne el Campanil, el Foro, la Casa del Arte, la Biblioteca Central y una red de espacios que conectan formación, cultura y vida universitaria.</p><div class="map-place-meta"><span id="mapPlaceDistance">PUNTO DE PARTIDA</span><span id="mapPlaceCoordinates">36°49′S / 73°02′W</span></div></div>
+              <div class="map-place-gallery" id="mapPlaceGallery" aria-label="Más imágenes del lugar"></div>
+            </aside>
+          </div>
+
+          <div class="map-stop-list reveal" aria-label="Seleccionar lugar del mapa">
+            <button type="button" class="map-stop is-active" data-map-trigger="udec" aria-pressed="true"><span>01</span><strong>Universidad de Concepción</strong><em>campus</em></button>
+            <button type="button" class="map-stop" data-map-trigger="parque" aria-pressed="false"><span>02</span><strong>Parque Ecuador</strong><em>verde urbano</em></button>
+            <button type="button" class="map-stop" data-map-trigger="sanpedro" aria-pressed="false"><span>03</span><strong>Laguna Grande</strong><em>ribera</em></button>
+            <button type="button" class="map-stop" data-map-trigger="talcahuano" aria-pressed="false"><span>04</span><strong>Puerto de Talcahuano</strong><em>identidad</em></button>
+            <button type="button" class="map-stop" data-map-trigger="lota" aria-pressed="false"><span>05</span><strong>Parque Isidora Cousiño</strong><em>patrimonio</em></button>
+            <button type="button" class="map-stop" data-map-trigger="tome" aria-pressed="false"><span>06</span><strong>Playa de Tomé</strong><em>costa</em></button>
+            <button type="button" class="map-stop" data-map-trigger="dichato" aria-pressed="false"><span>07</span><strong>Costanera de Dichato</strong><em>paisaje</em></button>
+          </div>
+
+          <details class="map-credits reveal" id="map-credits"><summary>Créditos fotográficos del mapa</summary><p>Las fotografías de esta sección provienen de Wikimedia Commons y se mantienen con atribución a sus autores y enlaces a la licencia correspondiente.</p><div class="map-credit-list"><a href="https://commons.wikimedia.org/wiki/Category:Universidad_de_Concepci%C3%B3n" target="_blank" rel="noreferrer">UdeC · categoría de campus</a><a href="https://commons.wikimedia.org/wiki/File:Acceso_principal_Biblioteca_Central_Luis_David_Cruz_Ocampo.jpg" target="_blank" rel="noreferrer">Biblioteca · BiblioJona · CC BY-SA 4.0</a><a href="https://commons.wikimedia.org/wiki/File:Arco_UdeC_2026.jpg" target="_blank" rel="noreferrer">Arco · BiblioJona · CC BY-SA 4.0</a><a href="https://commons.wikimedia.org/wiki/File:Foro_UdeC.jpg" target="_blank" rel="noreferrer">Foro · Tomás Jorquera · CC BY</a><a href="https://commons.wikimedia.org/wiki/File:Pinacoteca_UdeC.jpg" target="_blank" rel="noreferrer">Casa del Arte · Tomás Jorquera · CC BY 2.0</a><a href="https://commons.wikimedia.org/wiki/File:Parque_Ecuador.jpg" target="_blank" rel="noreferrer">Parque Ecuador · Hualo</a><a href="https://commons.wikimedia.org/wiki/File:Puerto_de_Talcahuano.jpg" target="_blank" rel="noreferrer">Talcahuano · Anacronicarla</a><a href="https://commons.wikimedia.org/wiki/File:Laguna_Grande_(11656146115).jpg" target="_blank" rel="noreferrer">Laguna Grande · order_242</a><a href="https://commons.wikimedia.org/wiki/File:Parque_Isidora_Cousi%C3%B1o,_parque_de_Lota.JPG" target="_blank" rel="noreferrer">Lota · B.diaz.c</a><a href="https://commons.wikimedia.org/wiki/File:Playa_de_Tom%C3%A9,_Regi%C3%B3n_del_Bio_Bio.JPG" target="_blank" rel="noreferrer">Tomé · RenataQuiroz</a><a href="https://commons.wikimedia.org/wiki/File:Costanera_de_Dichato.jpg" target="_blank" rel="noreferrer">Dichato · MG4 2017</a></div></details>
+        </div>
+      </section>
+
       <section class="ink-section participate-section" id="participa" aria-labelledby="participa-title">
         <div class="shell">
-          <div class="participate-top"><span class="section-number">08 / PARTICIPA</span><span class="topline-note">LA CONVERSACIÓN YA EMPEZÓ</span></div>
+          <div class="participate-top"><span class="section-number">09 / PARTICIPA</span><span class="topline-note">LA CONVERSACIÓN YA EMPEZÓ</span></div>
           <div class="participate-heading"><h2 class="reveal" id="participa-title">La próxima<br /><span>conexión puede ser tuya.</span></h2><p class="section-intro reveal reveal-delay-1">La inscripción, el llamado a voluntariado, las postulaciones de relatores y la participación de empresas se habilitarán por etapas.</p></div>
           <div class="participate-grid">
             <article class="participate-card reveal"><span class="participate-icon">→</span><span class="card-kicker">DELEGACIONES</span><h3>Recibe las novedades de inscripción.</h3><p>Fechas, categorías, alojamiento y programa se publicarán cuando el proceso esté listo.</p><button class="button button-light" type="button" data-toast="Las novedades de inscripción se publicarán por los canales oficiales.">Avisarme cuando abra <span aria-hidden="true">↗</span></button></article>
